@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/background_blue_640_960">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <ListView
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:id="@+id/listViewFirst"
+            android:layout_gravity="left|bottom" />
+
+        <ListView
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:id="@+id/listViewSecond"
+            android:layout_gravity="right|bottom" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal|top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/sek"
+                android:id="@+id/textViewSecond"
+                android:layout_gravity="right|bottom"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_width="525dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextSecond"
+                android:layout_gravity="left|bottom"
+                android:background="@android:drawable/editbox_background_normal" />
+
+            <ImageView
+                android:layout_width="84dp"
+                android:layout_height="32dp"
+                android:id="@+id/imageViewUpDown"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/up_down"
+                android:clickable="true"
+                android:paddingLeft="50dp" />
+
+            <EditText
+                android:layout_width="525dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextFirst"
+                android:layout_gravity="left|top"
+                android:background="@android:drawable/editbox_background_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/eur"
+                android:id="@+id/textViewFirst"
+                android:layout_gravity="right|top"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/app_description"
+        android:id="@+id/textView"
+        android:layout_gravity="left|top"
+        android:textColor="#fdfdfd" />
+
+</FrameLayout>

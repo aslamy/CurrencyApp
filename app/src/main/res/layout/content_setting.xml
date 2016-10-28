@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.benjamin.currencyapp.activity.SettingActivity"
+    tools:showIn="@layout/activity_setting"
+    android:background="@drawable/background_blue_640_960">
+
+
+    <RadioGroup
+        android:layout_width="143dp"
+        android:layout_height="207dp"
+        android:layout_gravity="right|top"
+        android:id="@+id/radio_group">
+
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="1 day"
+            android:id="@+id/one_day"
+            android:layout_marginRight="87dp"
+            android:layout_marginEnd="87dp"
+            android:layout_marginTop="42dp"
+            android:checked="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:text="3 days"
+            android:id="@+id/three_days"
+            android:layout_below="@+id/one_day"
+            android:layout_alignLeft="@+id/one_day"
+            android:layout_alignStart="@+id/one_day"
+            android:checked="false"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:text="1 week"
+            android:id="@+id/one_week"
+            android:layout_below="@+id/three_day"
+            android:layout_alignLeft="@+id/three_day"
+            android:layout_alignStart="@+id/three_day"
+            android:checked="false"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:text="1 month"
+            android:id="@+id/one_month"
+            android:checked="false"
+            android:layout_below="@+id/one_week"
+            android:layout_alignLeft="@+id/one_week"
+            android:layout_alignStart="@+id/one_week"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="174dp"
+        android:layout_height="451dp"
+        android:layout_gravity="left|center_vertical">
+
+        <TextView
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Update currency"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal|top"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffff" />
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/save_button"
+        android:layout_gravity="center"
+        style="@style/btnStyleBlackpearl" />
+
+</FrameLayout>
